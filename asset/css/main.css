@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #edf8f8;
+}
+
+.main-content {
+    padding: 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+}
+
+.list-option {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.option-item {
+    padding: 20px 10px 40px 10px;
+}
+
+.button {
+    padding: 8px;
+    border-radius: 8px;
+    border-top: 2px solid rgb(211, 141, 61);
+    border-left: 2px solid rgb(211, 141, 61);
+    color: #af9839;
+    transition: all linear 0.5s;
+}
+
+.button:hover {
+    background-color: #af9839;
+    color: aliceblue;
+}
+
+.title::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    background: rgb(211, 141, 61);
+    bottom: 0;
+    left: calc(50% - 50px);
+    text-align: center;
+}
+
+.list-item {
+    display: flex;
+}
+
+.dish-item {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    max-height: 150px;
+}
+
+.dish-item img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    border: #af9839 solid 5px;
+}
+
+.dish-content {
+    width: 70%;
+    padding-left: 8%;
+}
+
+.dish-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted black;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.dish-about {
+    margin-top: 20px;
+    color: #909393;
+    letter-spacing: 2px;
+}
+
+.dish-price {
+    color: #af9839;
+}
