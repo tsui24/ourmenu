@@ -76,14 +76,13 @@ function getAll() {
     let html = ``;
     listDish.forEach((item) => {
         html += `
-    <div class="dish-item">
-                <img src="asset/image/${item.img}" alt="">
-                <div class="dish-content">
+            <div class="dish-item col-lg-6 col-md-12">
+                <img src="asset/image/${item.img}" alt="" class="col-lg-4 col-md-3 p-0">
+                <div class="dish-content col-lg-8 col-md-9">
                     <div class="dish-info">
                         <h4 class="dish-name">${item.name}</h4>
                         <p class="dish-price">${item.price}</p>
                     </div>${item.infor}</p>
-                    </div>
                 </div>
             </div>
     `;
@@ -99,14 +98,13 @@ function getCategory(typeName) {
     listDish.forEach((item) => {
         if (item.type === typeName) {
             html += `
-    <div class="dish-item">
-                <img src="asset/image/${item.img}" alt="">
-                <div class="dish-content">
+            <div class="dish-item col-lg-6 col-md-12">
+                <img src="asset/image/${item.img}" alt="" class="col-lg-4 col-md-3">
+                <div class="dish-content col-lg-8 col-md-9">
                     <div class="dish-info">
                         <h4 class="dish-name">${item.name}</h4>
                         <p class="dish-price">${item.price}</p>
                     </div>${item.infor}</p>
-                    </div>
                 </div>
             </div>
     `;
